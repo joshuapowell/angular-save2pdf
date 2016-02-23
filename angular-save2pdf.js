@@ -27,7 +27,7 @@
 
                 var pagesplit = ngHtmlPdfConfig.pagesplit || true, 
                 height = ngHtmlPdfConfig.pagesplit || element[0].offsetHeight, 
-                pdfName = Attrs.pdfName || gHtmlPdfConfig.pdfName;
+                pdfName = Attrs.pdfName || ngHtmlPdfConfig.pdfName;
                 
                 $scope.$on('saveToPdf', function(event, mass) {
                     var pdf = new jsPDF('p','px','letter');
